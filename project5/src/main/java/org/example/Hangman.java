@@ -15,7 +15,6 @@ public class Hangman {
             for (int i = 0; i < word.length(); i++)
                 correct += "_";
             System.out.println("H A N G M A N");
-            System.out.println(getDrawing(0));
             Object[] gui = check(guesses, word, "", correct, wrong, -1);
             while (Integer.parseInt(gui[2].toString()) < 7) {
                 try {
@@ -64,7 +63,7 @@ public class Hangman {
      * @param word the word to be guessed
      * @param guess the letter guessed
      * @param right a string containing the word to be guessed with underscore characters replacing letters not already guessed
-     * @param wrong a string containing the phrase Missed Letters: along with the inccorectly guessed letters seperated by commas
+     * @param wrong a string containing the phrase "Missed Letters: " along with the incorrectly guessed letters separated by commas
      * @param wrongGuesses the number of incorrect guesses so far
      * @return an array containing the updated wrong string, the updated right string, and the updated number of incorrect guesses
      * @throws Exception
