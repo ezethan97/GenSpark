@@ -2,8 +2,9 @@ package org.example;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.sql.Array;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Hangman {
     public static void main(String[] args) throws Exception {
